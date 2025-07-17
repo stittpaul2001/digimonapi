@@ -2,28 +2,33 @@
 
 export class Digimon {
   constructor(data) {
-    this.id = data.id
-    this.images = data.images
+    this.image = data.image
     this.name = data.name
-    this.skills = data.skills
-    this.levels = data.levels
-    this.nextEvolutions = data.nextEvolutions
-    this.priorEvolutions = data.priorEvolutions
-    this.types = data.types
-    this.descriptions = data.descriptions
-    this.releaseDate = data.releaseDate
-    this.attributes = data.attributes
+    this.attribute = undefined
   }
+
 
 
   get wildDigimonList() {
     return `
-    <section class="row align-items-center">
-      <div class="col-md-3">
-        <div onclick="app.wildDigimonsController.getWildDigimon('${this.name}')" class="btn text-start" role="button"> ${this.name}</div>
-      </div>
-    </section>
+    <div onclick="app.wildDigimonsController.getActiveDigimon('${this.name}')" class="btn text-start w-100" role="button"> 
+    <span class="fw-bold fs-2 border shadow border-4 border-success mb-2">~ ${this.name}</span></div>
+    
     `
   }
 
+  get sandboxTemplate() {
+    return `
+    <div onclick="app.wildDigimonsController.getActiveDigimon('${this.name}')" class="btn text-start w-100" role="button"> 
+    <span class="fw-bold fs-2 border shadow border-4 border-success mb-2">~ ${this.name}</span></div>
+    
+    `
+  }
+
+}
+
+export class SandboxDigimons extends Digimon {
+  super() {
+
+  }
 }

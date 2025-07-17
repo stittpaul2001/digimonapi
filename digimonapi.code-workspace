@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "name": ".vscode",
+      "path": ".vscode"
+    },
+    {
+      "name": "digimonapi",
+      "path": "digimonapi"
+    },
+    {
+      "name": "Week 1-HTML & CSS",
+      "path": "Week 1-HTML & CSS"
+    },
+    {
+      "name": "Week 2=JavaScript Basics",
+      "path": "Week 2=JavaScript Basics"
+    },
+    {
+      "name": "Week 3-JavaScript MVC",
+      "path": "Week 3-JavaScript MVC"
+    },
+    {
+      "name": "Week 4-Async Programming",
+      "path": "Week 4-Async Programming"
+    },
+    {
+      "name": "Week 5-Server-side Development",
+      "path": "Week 5-Server-side Development"
+    },
+    {
+      "name": "Week 6-Front-End Frameworks",
+      "path": "Week 6-Front-End Frameworks"
+    },
+    {
+      "name": "Week 7-The Fullstack App",
+      "path": "Week 7-The Fullstack App"
+    },
+    {
+      "name": "Week 8-Cloud Computing",
+      "path": "Week 8-Cloud Computing"
+    },
+    {
+      "name": "Week 9-C and SQL",
+      "path": "Week 9-C and SQL"
+    },
+    {
+      "name": "Weekly Notes",
+      "path": "Weekly Notes"
+    }
+  ]
+}

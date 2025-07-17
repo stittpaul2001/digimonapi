@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "asyncpokedex",
+      "path": "asyncpokedex"
+    },
+    {
+      "name": "asynctrivia",
+      "path": "asynctrivia"
+    },
+    {
+      "name": "giftedlab",
+      "path": "giftedlab"
+    },
+    {
+      "name": "pokemonapi",
+      "path": "pokemonapi"
+    },
+    {
+      "name": "summer25_gregslist_api",
+      "path": "summer25_gregslist_api"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { Digimon } from "../models/Digimon.js";
 import { wildDigimonsService } from "../services/WildDigimonsService.js";
 import { Pop } from "../utils/Pop.js";
 import { setHTML } from "../utils/Writer.js";
@@ -9,6 +10,7 @@ export class WildDigimonsController {
   constructor() {
     console.log('wildDigimon')
     AppState.on('wildDigimons', this.drawWildDigimon)
+    AppState.on('activeDigimon', this.drawActiveDigimon)
 
     this.getWildDigimon()
 
@@ -31,9 +33,23 @@ export class WildDigimonsController {
     wildElem.innerHTML = listContent
   }
 
-  drawActiveDigimon() {
-    const digimon = AppState.digimons
 
+  
+  drawActiveDigimon() {
+    let wildDigimon = AppState.activeDigimon
+    const digimon = AppState.activeDigimon
+    const activeElem = document.getElementById('ActiveTemplate')
+    activeElem.innerHTML = digimon.actveTemplate
+  }
+
+  async getActiveDigimon(name) {
+    try {
+      console.log('getting active digimon!')
+      await wildDigimonsService.getActiveDigimon(name)
+    } catch (error) {
+      Pop.error(error, 'Cant get active digimon')
+      console.error(error, 'could not get active digimon!')
+    }
   }
 
 }

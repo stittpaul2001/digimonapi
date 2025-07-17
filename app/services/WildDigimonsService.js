@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js"
 import { Digimon } from "../models/Digimon.js"
+import { IndepthDigimon } from "../models/IndepthDigimon.js"
 
 
 
@@ -10,6 +11,13 @@ export const digiApi = new axios.create({
 })
 
 class WildDigimonsService {
+
+  async getActiveDigimon(name) {
+    const response = await digiApi.get(`api/v1/digimon/${name}`)
+    console.log('found digimon', response.data.name)
+    AppState.activeDigimon = new IndepthDigimon(response.data)
+    console.log(AppState.activeDigimon)
+  }
 
 
   async getWildDigimon() {

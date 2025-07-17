@@ -12,11 +12,11 @@
   <title>digimonapi</title>
 </head>
 
-<body data-bs-theme="light">
+<body data-bs-theme="dark">
   <header>
-    <nav class="navbar bg-codeworks text-light gap-2 px-2">
+    <nav class="navbar bg-success text-light gap-2 px-2">
       <img src="./assets/img/logo.png" height="45" alt="" loading="lazy">
-      <div><b class="fw-bold fs-1 text-danger">Digimon</b></div>
+      <div><b class="fw-bold fs-1 ">Digimon</b></div>
       <div class="ms-auto" id="authstate"></div>
       </div>
     </nav>
@@ -24,42 +24,49 @@
 
   <main>
     <div class="container-fluid">
-      <section class="row">
-        <div class="col-2">
-          <h2>Wild Digimon</h2>
-          <section id="wildDigimonList" class="row shadow">
-            <!-- //STUB - Wild Digemon -->
-            <hr>
+      <div class="row my-2 d-flex">
+        <div class="col-md-3 border border-teal border-2 rounded mb-2">
+          <div class="fw-bold text-decoration-underline text-center text-danger fs-1">Wild Digimon</div>
+          <!-- //STUB - Wild Digemon -->
+          <section id="wildDigimonList">
 
           </section>
         </div>
-      </section>
-    </div>
 
-    <div id="" class="col-md-5">
-      <!-- //STUB - active Digimon -->
-      <h1>Active Digimon</h1>
-      <hr>
-    </div>
-
-
-
-
-    <section class="col-3">
-      <div class="row">
-        <div class="">
-          <h2>My Digimon</h2>
-          <div class="text-center fw-bold">
+        <div class="col-md-6">
+          <div id="ActiveTemplate" class="border border-1 border-teal d-flex flex-column justify-space-between">
+            <h1 class="text-center">Active Digimon</h1>
+            <!-- //STUB - active Digimon -->
+            <!-- <div class="border border-1 border-teal p2 d-flex flex-column justify-content-between">
+              <div class=" border border-1 border-success rounded-pill px-3 py-1 d-flex justify-content-between text-capitalize">
+                <span class="fw-bold fs-1 px-3">
+                  <h1>Agumon</h1>
+                    <span class="text-end">Digimon Number</span>
+                </span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img class="" alt="" src="https://digi-api.com/images/digimon/w/Agumon.png">
+              </div>
+              <div class="p-3 border boder-1 border-success rounded">
+                <div class="d-flex gap-3 mx-2">
+                  <span class="btn btn-danger rpimded-pill fw-bold text-dark text-center">Level</span>
+                  <span class="btn btn-danger rpimded-pill fw-bold text-black text-center">Attribute</span>
+                  <span class="btn btn-danger rpimded-pill fw-bold text-black text-center">Type</span>
+                </div>
+              </div>
+                </div> -->
           </div>
-          <hr>
-          <section id="" class="col">
+        </div>
+
+
+        <div class="col-md-2 px-2 border border-1 border-teal">
+          <h1 class="fw-bold text-center text-danger text-decoration-underline">My Digimon</h1>
+          <section id="" class="">
 
           </section>
-
         </div>
       </div>
-    </section>
-
+    </div>
   </main>
 
   <footer class="text-bg-dark">
