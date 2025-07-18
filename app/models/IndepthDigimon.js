@@ -6,7 +6,7 @@ export class IndepthDigimon {
     this.name = data.name
     this.id = data.id
     this.images = data.images
-    this.primaryImage = data.images[0]?.href
+    this.img = data.images[0]?.href
     this.skills = data.skills
     this.skill1 = data.skills[0]?.skill
     this.skill2 = data.skills[1]?.skill
@@ -37,7 +37,7 @@ export class IndepthDigimon {
         <div class="p-5">
           <span class="btn btn-danger rounded-pill fw-bold text-black text-center">Prior Evolution: ${this.priorEvolutions}</span>
         </div>
-          <img class="rounded border border-1 border-danger mt-2" alt="${this.name}" src="${this.primaryImage}">
+          <img class="rounded border border-1 border-danger mt-2" alt="${this.name}" src="${this.img}">
         <div class="p-5">
           <span class="btn btn-danger rounded-pill fw-bold text-black text-center">Next Evolution: ${this.nextEvolutions}</span>
         </div>
@@ -54,7 +54,7 @@ export class IndepthDigimon {
         </div>
     </div>
     <div class="text-center mt-1 mb-1">
-      <button class="btn btn-outline-yellow rounded-pill fs-1 fw-bold">Catch Digimon</button>
+      <button onclick="app.sandboxDigimonsController.saveActiveDigimon()" class="btn btn-outline-yellow rounded-pill fs-1 fw-bold">Catch Digimon</button>
       </div>
     `
   }

@@ -19,7 +19,7 @@ export class Digimon {
 
   get sandboxTemplate() {
     return `
-    <div onclick="app.wildDigimonsController.getActiveDigimon('${this.name}')" class="btn text-start w-100" role="button"> 
+    <div onclick="app.sandboxDigimonsController.saveActiveDigimon()" class="btn text-start w-100" role="button"> 
     <span class="fw-bold fs-2 border shadow border-4 border-success mb-2">~ ${this.name}</span></div>
     
     `
